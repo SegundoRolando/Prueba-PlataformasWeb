@@ -1,0 +1,16 @@
+<p>Rolando Calle</p>
+<p>Listando Personas</p>
+<table>
+    <tr>
+        <th>Cédula</th>
+        <th>Nombre</th>
+        <th>Fecha</th>
+        <th>N-Familiares</th>
+    </tr>
+    <tr *ngFor="let p of  personas | async">
+        <td>{{p.cedula}}</td>
+        <td>{{p.nombre}}</td>
+        <td>{{p.fechaN}}</td>
+        <td>{{p.cargaF}}</td>
+    </tr>
+</table>
